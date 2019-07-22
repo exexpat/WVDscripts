@@ -1,0 +1,19 @@
+{
+  "Name": "AFReadWriteRole",
+  "Id": null,
+  "IsCustom": true,
+  "Description": "Allows for read, write and delete access to Azure File Share over SMB",
+  "Actions": [
+   	"Microsoft.Storage/storageAccounts/fileServices/*"
+  ],
+  "DataActions": [
+   	"Microsoft.Storage/storageAccounts/fileServices/*"
+  ],
+  "NotDataActions": [
+   	"Microsoft.Storage/storageAccounts/fileServices/fileshares/files/modifypermissions/action",
+	"Microsoft.Storage/storageAccounts/fileServices/fileshares/files/actassuperuser/action"
+  ],
+  "AssignableScopes": [
+    	"/subscriptions/[Azure Subscription ID]"
+  ]
+}
